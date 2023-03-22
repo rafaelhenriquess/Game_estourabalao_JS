@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Prática Jogo</title>
+    
+
+   <!-- CSS -->
+   <link href="estilo.css" rel="stylesheet">
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script type="text/javascript">
+   </script>
+
+   <script src="jogo.js"></script>
+   <script language="javascript" src="montagem.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>   
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="iniciaJogo()">
+    <div style="float:left; width:auto; height:500px; background: #FFF; border: solid 1px #A2A2A2; margin-right: 5px;">
+      <table border="0px">
+        <tr>
+          <td>
+            <img src="img/balao_azul_grande.png" alt="">
+          </td>
+          <td>
+            <span id="baloes_inteiros" style="font-size: 40px;">
+
+            </span>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <table border="0px">
+        <tr>
+          <td>
+            <img src="img/balao_azul_grande_estourado.png" alt="">
+          </td>
+          <td>
+            <span id="baloes_estourados" style="font-size: 40px;"></span>
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <table border="0px" style="width: 140px; height:132px;">
+        <tr>
+          <td style="background: url('img/cronometro.png'); text-align: center;">
+            <span id="cronometro" style="color: red; font-size: 30px;"></span>
+          </td>
+        </tr>
+      </table>
+    
+    </div>
+    <div id="cenario" style="float: left; width: 600px; height:500px; background: url('img/cenario.png'); background-position: bottom;">
+
+    </div>
+  </body>
+</html>
